@@ -5,6 +5,15 @@ declare module Game {
   function Popup(message: string): void;
   function WriteSave(num?: number): void;
   function killShimmers(): void;
+  function registerMod(
+    name: string,
+    object: {
+      init?: () => void;
+      save?: () => string;
+      load?: (data: string) => void;
+      updateScore?: () => void;
+    }
+  ): void;
 
   const T: number;
   const drawT: number;
