@@ -14,103 +14,103 @@ declare module Game {
   /**
    * Settings of Cookie Clicker
    */
-  const prefs = {
+  const prefs: {
     /**
      * particle effects : falling cookies etc
      */
-    particles: 1,
+    particles: 0 | 1,
     /**
      * numbers that pop up when clicking the cookie
      */
-    numbers: 1,
+    numbers: 0 | 1,
     /**
      * save the game every minute or so
      */
-    autosave: 1,
+    autosave: 0 | 1,
     /**
      * send an AJAX request to the server every 30 minutes (note : ignored)
      */
-    autoupdate: 1,
+    autoupdate: 0 | 1,
     /**
      * display milk
      */
-    milk: 1,
+    milk: 0 | 1,
     /**
      * CSS shadow effects (might be heavy on some browsers)
      */
-    fancy: 1,
+    fancy: 0 | 1,
     /**
      * warn before closing the window
      */
-    warn: 0,
+    warn: 0 | 1,
     /**
      * display cursors
      */
-    cursors: 1,
+    cursors: 0 | 1,
     /**
      * make the game refresh less frequently when off-focus
      */
-    focus: 1,
+    focus: 0 | 1,
     /**
      * use old-style popups
      */
-    popups: 0,
+    popups: 0 | 1,
     /**
      * shorten numbers
      */
-    format: 0,
+    format: 0 | 1,
     /**
      * notifications fade faster
      */
-    notifs: 0,
+    notifs: 0 | 1,
     /**
      * animate buildings
      */
-    animate: 1,
+    animate: 0 | 1,
     /**
      * wobbly cookie
      */
-    wobbly: 1,
+    wobbly: 0 | 1,
     /**
      * alt monospace font for cookies
      */
-    monospace: 0,
+    monospace: 0 | 1,
     /**
      * CSS filter effects (might be heavy on some browsers)
      */
-    filters: 0,
+    filters: 0 | 1,
     /**
      * use new cookie click sound
      */
-    cookiesound: 1,
+    cookiesound: 0 | 1,
     /**
      * show crates around icons in stats
      */
-    crates: 0,
+    crates: 0 | 1,
     /**
      * use requestAnimationFrame to update drawing instead of fixed 30 fps setTimeout
      */
-    altDraw: 0,
+    altDraw: 0 | 1,
     /**
      * if true, show a "Have you backed up your save?" message on save load; set to false when save is exported
      */
-    showBackupWarning: 1,
+    showBackupWarning: 0 | 1,
     /**
      * if true, show Mute buttons and the building master bar
      */
-    extraButtons: 1,
+    extraButtons: 0 | 1,
     /**
      * if true, show a prompt before spending lumps
      */
-    askLumps: 0,
+    askLumps: 0 | 1,
     /**
      * if true, show patreon names for grandmas
      */
-    customGrandmas: 1,
+    customGrandmas: 0 | 1,
     /**
      * if true, game may show pause screen when timed out
      */
-    timeout: 0,
+    timeout: 0 | 1,
   };
 
   /**
