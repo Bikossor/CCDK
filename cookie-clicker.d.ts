@@ -13,6 +13,8 @@ declare module Game {
       load?: (data: string) => void;
     }
   ): void;
+  type HookName = "logic" | "draw" | "reset" | "reincarnate" | "ticker" | "cps" | "cookiesPerClick" | "click" | "create" | "check";
+  function registerHook(hookName: HookName, hookFunction: () => {}): void;
 
   const T: number;
   const drawT: number;
