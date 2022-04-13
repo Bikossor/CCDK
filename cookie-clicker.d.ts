@@ -11,7 +11,6 @@ declare module Game {
       init?: () => void;
       save?: () => string;
       load?: (data: string) => void;
-      updateScore?: () => void;
     }
   ): void;
 
