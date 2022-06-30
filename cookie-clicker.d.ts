@@ -16,6 +16,8 @@ declare module Game {
   type HookName = "logic" | "draw" | "reset" | "reincarnate" | "ticker" | "cps" | "cookiesPerClick" | "click" | "create" | "check";
   function registerHook(hookName: HookName, hookFunction: () => {}): void;
 
+  function Notify(title: string, desc: string, pic?: string | number | number[], quick?: number, noLog?: boolean): void;
+
   const T: number;
   const drawT: number;
   const loopT: number;
